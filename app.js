@@ -66,7 +66,7 @@ app.get('/', function(req, res) {
         console.log('Screenshotting: ' + urlToScreenshot);
         (async () => {
             const browser = await puppeteer.launch({
-                headless: false,
+                //headless: false,
                 args: ['--no-sandbox', '--disable-setuid-sandbox']
             });
             const page = await browser.newPage();
