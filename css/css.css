@@ -1,0 +1,29 @@
+.prueba span{
+		/*width: 300px !important;*/
+}
+
+.header__searchMobile span {
+	/*-webkit-transition: width 2s; 
+    transition: width 2s;*/
+}
+
+#modal_buscador{
+	visibility: hidden;
+  opacity: 0;
+   transition: all .3s ease-in-out;
+  left: auto !important;
+  right: -350px !important;
+  width: 100%;
+  top: 0 !important;
+  z-index: 99999 !important;
+}
+
+#modal_buscador.prueba{
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-350px,0);
+}
+
+body.prueba{
+	overflow: hidden;
+}
